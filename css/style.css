@@ -1,0 +1,70 @@
+body{
+
+ background-color: black
+ ;margin: 0;
+ padding: 0;
+}
+.maidDiv
+ {height: 600px;
+    width: 600px;
+    background-color: royalblue;
+    margin: 0 auto;
+    font-size: 0px;
+}
+.mainDiv > div
+ {
+     display: block;
+     height: 200px;
+     width: 200px;
+     margin: 0 auto;
+     box-sizing: border-box;
+    }
+    .red {background-color: red;
+        border-radius: 50%;
+        position: relative;
+        animation-name: topIn;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes topIn {
+        0% {
+            top: -100px;
+        }
+
+        100% {
+            top: 0px;
+        }
+    }
+    .yellow
+     {background-color: yellow;
+        border-radius: 50%;
+        animation-name: flipping;
+        transition-duration: 3s;
+     }
+     .yellow:hover {
+         transform: rotateY(180deg);
+     }
+    
+
+
+
+    .green
+     {background-color: green;
+      border-radius: 50%;
+      opacity: 0;
+      animation-name: appearing;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+      transition-property: transform;
+      transition-duration: 3s;
+     }
+
+     @keyframes appearing {
+         0% {
+             opacity: 0;
+         }
+         100% {
+             opacity: 1;
+         }
+    
+        }
